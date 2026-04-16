@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise College of Engineering</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+    
+    /* Header */
+    header { background: #0d3b66; color: #fff; padding: 1rem 5%; }
+    .nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 1.5rem; font-weight: 700; }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav a { color: #fff; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #f4d35e; }
+    
+    /* Hero */
+    .hero { background: linear-gradient(rgba(13,59,102,0.8), rgba(13,59,102,0.8)), url('https://picsum.photos/1200/500') center/cover; 
+            color: #fff; text-align: center; padding: 6rem 5%; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .btn { display: inline-block; background: #f4d35e; color: #0d3b66; padding: 0.8rem 1.5rem; 
+           border-radius: 5px; text-decoration: none; font-weight: 600; margin-top: 1rem; }
+    
+    /* Sections */
+    section { padding: 4rem 5%; }
+    .container { max-width: 1100px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 2rem; color: #0d3b66; font-size: 2rem; }
+    
+    /* About + Courses Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .card { background: #f7f7f7; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card h3 { color: #0d3b66; margin-bottom: 0.5rem; }
+    
+    /* Footer */
+    footer { background: #0d3b66; color: #fff; text-align: center; padding: 2rem 5%; margin-top: 2rem; }
+    
+    @media (max-width: 768px) {
+      .nav { flex-direction: column; gap: 1rem; }
+      nav ul { flex-direction: column; text-align: center; gap: 0.8rem; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">Sunrise College</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero" id="home">
+    <h1>Empowering Futures Through Education</h1>
+    <p>Affiliated to VTU | NAAC A+ Accredited | 25 Years of Excellence</p>
+    <a href="#admissions" class="btn">Apply Now</a>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p> best degree college, established in 2001, is a premier institution committed to academic excellence and innovation. Located in Kumbalgod, we offer world-class infrastructure, experienced faculty, and strong industry partnerships.</p>
+    </div>
+  </section>
+
+  <section id="courses" style="background:#f0f0f0;">
+    <div class="container">
+      <h2>Popular Courses</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>B.E. Computer Science</h3>
+          <p>4 Years | AI, ML, Data Science specializations available.</p>
+        </div>
+        <div class="card">
+          <h3>B.E. Electronics & Communication</h3>
+          <p>4 Years | IoT and VLSI design focus with modern labs.</p>
+        </div>
+        <div class="card">
+          <h3>MBA</h3>
+          <p>2 Years | Finance, Marketing, HR with 100% placement assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissions">
+    <div class="container">
+      <h2>Admissions 2026-27</h2>
+      <p style="text-align:center; margin-bottom:1.5rem;">Applications open for UG & PG programs. Merit and management quota available.</p>
+      <div style="text-align:center;">
+        <a href
+          
